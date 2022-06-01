@@ -11,9 +11,14 @@ class DashboardController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        //dd($request->query('title','Default value'));
+        //var_dump($request->query('title'));die;
+        /*echo "<pre>";
+            print_r($request);
+        echo "</pre>"; */
+        return view('test', ['title'=>$request->query('title','Default value')]);
     }
 
     /**

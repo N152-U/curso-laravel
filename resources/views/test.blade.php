@@ -8,8 +8,8 @@
 </head>
 <body>
     <p>Laravel</p>
-    @isset($name)
-         {{$name}}
+    @isset($title)
+         {{$title}}
     @else
         {{'No title'}}
     @endisset
